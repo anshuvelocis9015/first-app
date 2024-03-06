@@ -2,7 +2,7 @@ import React from "react";
 import { people } from "./data";
 
 export default function DataUsage(){
-    const listItems = people.map((person) =>
+    const listItems = people?.map(person =>
         <li key={person.id}>
             <p>
                 <b>{person.name}:</b>
@@ -19,3 +19,4 @@ export default function DataUsage(){
         </>
     );
 }
+
